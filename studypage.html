@@ -52,6 +52,9 @@
 				pos = getTop() + getHeight() + initTop;
 			}
 
+			if(target == sidebar)
+				bottomLimit = getTop() - 120;
+			
 			if (pos > bottomLimit)
 				pos = bottomLimit;
 			if (pos < topLimit)
